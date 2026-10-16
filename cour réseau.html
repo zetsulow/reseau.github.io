@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cours informatique | Réseau en Entreprise</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: #e5e7eb;
+    line-height: 1.7;
+}
+
+header {
+    text-align: center;
+    padding: 55px 20px;
+    background: linear-gradient(135deg, #111827, #312e81);
+    border-bottom: 2px solid #6366f1;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    color: #a5b4fc;
+}
+
+header p {
+    margin-top: 10px;
+    color: #cbd5e1;
+}
+
+main {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 18px;
+}
+
+section {
+    background: #151c2e;
+    padding: 24px;
+    margin-bottom: 22px;
+    border-radius: 14px;
+    border: 1px solid #293449;
+}
+
+h2 {
+    color: #818cf8;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #c4b5fd;
+    margin: 15px 0 8px;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+code, .example {
+    display: block;
+    background: #090e1a;
+    padding: 14px;
+    margin-top: 12px;
+    border-radius: 8px;
+    color: #86efac;
+    overflow-wrap: anywhere;
+}
+
+strong {
+    color: #c4b5fd;
+}
+
+.discord {
+    text-align: center;
+    background: #312e81;
+    padding: 30px 20px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+}
+
+.discord a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 22px;
+    background: #5865F2;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.discord a:hover {
+    background: #4752c4;
+}
+
+footer {
+    text-align: center;
+    color: #94a3b8;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Le Réseau en Entreprise</h1>
+    <p>Architecture, adressage IP, services et sécurité des infrastructures</p>
+</header>
+
+<main>
+
+<section>
+    <h2>1. Qu'est-ce qu'un réseau d'entreprise ?</h2>
+    <p>
+        Un <strong>réseau d'entreprise</strong> relie l'ensemble des équipements informatiques (ordinateurs, serveurs, imprimantes, téléphones IP) 
+        d'une organisation pour leur permettre de communiquer, de partager des ressources et d'accéder à Internet en toute sécurité.
+    </p>
+
+    <h3>Les échelles de réseau</h3>
+    <ul>
+        <li><strong>LAN (Local Area Network) :</strong> Réseau local d'un site ou d'un bureau (ex: les PC d'un même bâtiment).</li>
+        <li><strong>MAN (Metropolitan Area Network) :</strong> Réseau à l'échelle d'une ville (reliant plusieurs agences d'une même entreprise).</li>
+        <li><strong>WAN (Wide Area Network) :</strong> Réseau étendu reliant des sites géographiquement très éloignés (ex: Internet ou un réseau mondial d'entreprise).</li>
+    </ul>
+</section>
+
+<section>
+    <h2>2. Les équipements réseaux essentiels</h2>
+    <p>
+        Pour faire circuler l'information d'un point à un autre, le réseau s'appuie sur des équipements matériels spécifiques.
+    </p>
+
+    <h3>Les composants clés</h3>
+    <ul>
+        <li><strong>Switch :</strong> Relie les machines d'un même réseau local (LAN) et achemine les données de manière ciblée.</li>
+        <li><strong>Routeur :</strong> Le routeur est un des composants les plus importants du cœur du réseau, car il agit comme une passerelle entre les réseaux. Il permet de faire circuler les données entre le réseau local et Internet..</li>
+        <li><strong>Pare-feu (Firewall) :</strong> Dispositif de sécurité qui filtre et contrôle le trafic entrant et sortant selon des règles strictes.</li>
+        <li><strong>Point d'accès Wi-Fi (AP) :</strong> Permet aux appareils nomades de se connecter au réseau sans fil.</li>
+        <li><strong>Serveur :</strong> Ordinateur puissant qui héberge des services partagés (fichiers, applications, annuaire).</li>
+        <li><strong>Coeur de réseau :</strong> Le cœur de réseau est responsable du routage, de la commutation et de l’acheminement des données entre les appareils connectés. Il est chargé de connecter tous les équipements tels que les stations de travail, les serveurs et autres dispositifs du réseau local (LAN) d’une organisation, qui peut inclure des connexions filaires et sans fil (WIFI).</li>
+        <li><strong>Serveur DNS:</strong>est responsable de la traduction des noms de domaine en adresses IP. Cela permet aux utilisateurs d’accéder à des sites web et à d’autres ressources sur l’internet sans avoir à mémoriser de longues chaînes de chiffres.</li>
+        <li><strong>Serveur DHCP:</strong>Le serveur DHCP est responsable de la fourniture d’adresses IP aux appareils du réseau. Il attribue des adresses uniques à chaque appareil lors de la connexion initiale et les met à jour périodiquement si nécessaire. Il permet également d’éviter les conflits d’adresses IP.</li>
+        <li><strong>Proxy:</strong>Le proxy contribue à améliorer les performances en stockant dans son cache les pages web fréquemment utilisées, de sorte qu’elles peuvent être rapidement récupérées sans avoir à les demander à chaque fois au serveur d’origine. Il peut également assurer la sécurité et contrôler l’accès à certains sites web ou services.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>3. L'adressage IP et le routage</h2>
+    <p>
+        Chaque appareil connecté à un réseau possède une adresse unique appelée <strong>adresse IP</strong> pour pouvoir être identifié et joignable.
+    </p>
+
+    <h3>IPv4/IPv6</h3>
+    <p>
+        L'<strong>IPv4</strong> c'est l'ip classique qu'on a à la maison, il utilise 4 nombres séparés par des points ex: <code>192.168.1.10</code> 
+        L'<strong>IPv6</strong> c'est le même principe sauf que la forme n'est pas la même ex: <code>2001:0db8:85a3:8a2e:0370:7334</code>
+    </p>
+
+    <h3>IP Publique et IP Privée</h3>
+    <p>
+        Les réseaux d'entreprise utilisent généralement des plages d'adresses <strong>privées</strong> en interne, 
+        et une passerelle (NAT) traduit ces adresses pour accéder à l'adresse <strong>publique</strong> sur Internet.
+    </p>
+
+    <div class="example">
+        Exemple d'IP privée courante : 192.168.1.50<br>
+        Masque de sous-réseau : 255.255.255.0<br>
+        Passerelle par défaut (Routeur) : 192.168.1.1
+    </div>
+</section>
+
+<section>
+    <h2>4. La sécurité des réseaux d'entreprise</h2>
+    <p>
+        Protéger les données et les accès est un enjeu critique pour éviter les cyberattaques, le vol de données ou les pannes.
+    </p>
+
+    <h3>Bonnes pratiques et technologies:</h3>
+    <ul>
+        <li><strong>Segmentation (VLAN) :</strong> Diviser le réseau physique en sous-réseaux virtuels logiques (isoler les invités des postes de direction).</li>
+        <li><strong>VPN (Virtual Private Network) :</strong> Créer un tunnel chiffré sécurisé pour que les employés distants se connectent au réseau de l'entreprise.</li>
+        <li><strong>Mise en place de pare-feu :</strong> Bloquer les flux non autorisés et inspecter le trafic suspect.</li>
+        <li><strong>Mises à jour régulières :</strong> Corriger les failles de sécurité sur les routeurs, switchs et serveurs.</li>
+        <li><strong>Principe du moindre privilège :</strong> Ne donner aux utilisateurs que les accès stricts nécessaires à leur travail.</li>
+        <li><strong>SIEM:</strong> Gestion des Informations et des Événements de Sécurité est une plateforme centralisée qui sert de cerveau à la sécurité informatique d'une entreprise</li>
+        <li><strong>RDP:</strong>Détection et Réponse sur les points de terminaison est une version beaucoup plus avancée et moderne d'un antivirus. Il pourra par exemple mettre en quarantaine un fichier suspect reçu via un mail</li>
+        <li><strong>Active Directory:</strong>Centralise la gestion des utilisateurs, des mots de passe et des droits d'accès aux ressources du réseau de l'entreprise</li>
+    </ul>
+</section>
+
+<section>
+    <h2>À retenir</h2>
+    <ul>
+        <li>Un réseau d'entreprise relie les postes, serveurs et périphériques pour faciliter la communication.</li>
+        <li>Le <strong>Switch</strong> gère le réseau local, le <strong>Routeur</strong> connecte les réseaux entre eux.</li>
+        <li>L'<strong>adresse IP</strong> identifie chaque machine de manière unique sur le réseau.</li>
+        <li>Le <strong>DHCP</strong> distribue les IP automatiquement et le <strong>DNS</strong> traduit les noms en IP.</li>
+        <li>La segmentation (VLAN) et le VPN renforcent grandement la sécurité et l'isolation des données sensibles.</li>
+    </ul>
+</section>
+
+<section class="discord">
+    <h2>Rejoins notre serveur Discord</h2>
+    <p>
+        Envie de parler informatique, réseaux, hardware et technologie avec la communauté ?
+    </p>
+
+    <a href="https://discord.gg/Vk47rW3Bcq" target="_blank" rel="noopener noreferrer">
+        discord.gg/1020sec
+    </a>
+</section>
+
+</main>
+
+<footer>
+    Cours sur le Réseau en Entreprise
+</footer>
+
+</body>
+</html>
